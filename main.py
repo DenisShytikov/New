@@ -1,13 +1,13 @@
-devices = "DoorProtect DoorProtect MotionProtect MotionProtect FireProtect FireProtectPlus FireProtect DoorProtect"
+devices = [
+    {"name": "DoorProtect", "price": 20, "centrals": {"hub", "hub+"}},
+    {"name": "MotionProtect", "price": 40, "centrals": {"hub", "hub2+"}},
+    {"name": "FireProtect", "price": 60, "centrals": {"hub+", "hub2", "hub2+"}},
+    {"name": "DoorProtectPlus", "price": 45, "centrals": {"hub", "hub+", "hub2"}},
+    {"name": "Socket", "price": 30, "centrals": {"hub", "hub2"}}
+]
 
-devices_list = devices.split()
-device_dict = {}
 
-for device in devices_list:
-     if device not in device_dict:
-        device_dict[device] = 1
-     else:
-        device_dict[device] = device_dict[device] + 1
+for device in devices:
+    if device['price'] >= 40 and device['centrals'] == {'hub+', 'hub'}:
 
-print(device_dict)
-
+        print(device)
