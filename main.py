@@ -7,6 +7,5 @@ devices = [
 ]
 
 for device in devices:
-    if device['centrals'] == {'hub+', 'hub'} and device['price'] > 40:
-        continue
-    print(device)
+    if device['centrals'] == {'hub+'} and device['price'] > 40:
+        print(device)
