@@ -9,7 +9,8 @@ devices = [
 devices_hub = {}
 
 for device in devices:
-    if device['centrals'] == {'hub+'} and device['price'] > 40:
-        print(device)
+    if device["centrals"] == {"hub+"} and device["price"] >= 40:
+        continue
 
+devices_hub.update(device)
 print(devices_hub)
