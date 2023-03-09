@@ -6,8 +6,7 @@ devices = [
     {"name": "Socket", "price": 30, "centrals": {"hub", "hub2"}}
 ]
 
-
 for device in devices:
-    if device['price'] >= 40 and device['centrals'] == {'hub+', 'hub'}:
-
-        print(device)
+    if device['centrals'] == {'hub+', 'hub'} and device['price'] > 40:
+        continue
+    print(device)
