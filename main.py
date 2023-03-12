@@ -14,9 +14,9 @@
 #
 # devices_hub.update(device)
 # print(devices_hub)
-from typing import Dict
-
-import a as a
+# from typing import Dict
+#
+# import a as a
 
 # devices = [
 #     {"name": "DoorProtect"},
