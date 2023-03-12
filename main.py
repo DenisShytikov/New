@@ -30,11 +30,18 @@ import a as a
 #     name = device.values()
 # print(name)
 
+#
+# name = ['Jon', 'Leonard', 'Vova']
+# age = [12, 18, 30]
+#
+#
+# result = dict(zip(name, age))
+#
+# print(result)
 
 name = ['Jon', 'Leonard', 'Vova']
 age = [12, 18, 30]
 
+new_list = {name[i]: age[i] for i in range(len(name))}
 
-result = dict(zip(name, age))
-
-print(result)
+print(new_list)
