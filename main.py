@@ -39,9 +39,60 @@
 #
 # print(result)
 
-name = ['Jon', 'Leonard', 'Vova']
-age = [12, 18, 30]
+# name = ['Jon', 'Leonard', 'Vova']
+# age = [12, 18, 30]
+#
+# new_list = {name[i]: age[i] for i in range(len(name))}
+#
+# print(new_list)
 
-new_list = {name[i]: age[i] for i in range(len(name))}
+#
+# name = ['Jon', 'Leonard', 'Vova']
+# age = [12, 18, 30]
+#
+# result = {}
+#
+# for i in range(len(name)):
+#     result[name[i]] = age[i]
+#
+# print(result)
+# #
+# name = ['Jon', 'Leonard', 'Vova']
+# age = [12, 18, 30]
+#
+# result = {}
+#
+# for i in range(len(name)):
+#     print('i:', i)
+#     print('name[i]', name[i])
+#     print('age[i]', age[i])
+#     print('\n')
+#     result[name[i]] = age[i]
+#     print('result:', result)
+#     print('\n')
+#
+# print(result)
+#
+# name = ['Jon', 'Leonard', 'Vova']
+# age = [12, 18, 30]
+#
+# result = {}
+#
+# for i in name:
+#     print(i)
 
-print(new_list)
+
+devices = [
+    {"name": "DoorProtect", "price": 20, "centrals": {"hub", "hub+"}},
+    {"name": "MotionProtect", "price": 40, "centrals": {"hub", "hub2+"}},
+    {"name": "FireProtect", "price": 60, "centrals": {"hub+", "hub2", "hub2+"}},
+    {"name": "DoorProtectPlus", "price": 45, "centrals": {"hub", "hub+", "hub2"}},
+    {"name": "Socket", "price": 30, "centrals": {"hub", "hub2"}}
+]
+
+
+for device in devices:
+    device_hub = dict(device)
+    if device.keys("centrals") == "hub":
+        print(device)
+
