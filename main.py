@@ -94,12 +94,10 @@ devices_hub = {}
 
 for device in devices:
     if device['price'] > 40 and 'hub' in device['centrals']:
-        x = device['name']
-        y = device['price']
-
-print(devices_hub[x, y])
+        devices_hub[device['name']] = device['price']
 
 
+print(devices_hub)
 
 
 
