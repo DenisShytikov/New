@@ -1,21 +1,34 @@
-devices = [
-    {"name": "DoorProtect"},
-    {"name": "MotionProtect"},
-    {"name": "FireProtect"},
-    {"name": "DoorProtectPlus"},
-    {"name": "Socket"},
-]
-
-new_list = []
-for device in devices:
-    new_list.append(device['name'])
-
-print(new_list)
-
+# devices = [
+#     {"name": "DoorProtect"},
+#     {"name": "MotionProtect"},
+#     {"name": "FireProtect"},
+#     {"name": "DoorProtectPlus"},
+#     {"name": "Socket"},
+# ]
+#
+# new_list = []
 # for device in devices:
-#   continue
+#     new_list.append(device['name'])
 #
-# name  = []
-# name.append(device.values())
+# print(new_list)
 #
-# print(name)
+# # for device in devices:
+# #   continue
+# #
+# # name  = []
+# # name.append(device.values())
+# #
+# # print(name)
+
+
+
+
+x = 1
+y = 2
+
+def sum_numbers(first_character, second_character):
+    return x + y
+
+print(sum_numbers(x, y))
+
+

@@ -90,9 +90,22 @@ devices = [
     {"name": "Socket", "price": 30, "centrals": {"hub", "hub2"}}
 ]
 
+devices_hub = {}
 
 for device in devices:
-    device_hub = dict(device)
-    if device.keys("centrals") == "hub":
-        print(device)
+    if device['price'] > 40 and 'hub' in device['centrals']:
+        x = device['name']
+        y = device['price']
 
+print(devices_hub[x, y])
+
+
+
+
+
+
+
+
+
+# def my_function(*kids):
+#     print("The youngest child is " + kids[2])
