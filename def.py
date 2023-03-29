@@ -9,16 +9,18 @@
 # То есть не гугли на пряму, а то много есть решений в гугле
 
 # (32 °F − 32) × 5/9 = 0 °C
+# (0 °C × 9/5) + 32 = 32 °F
 
 
 
-a = 50
-b = 80
-
-def f(a, b):
-    return
-
-print(f(17))
+celsius = int(input())
 
 
+def conv(c):
+  c = 9 / 5 * celsius + 32
+  return c
 
+
+fahrenheit = conv(celsius)
+
+print(fahrenheit)
